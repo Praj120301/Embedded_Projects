@@ -1,0 +1,6 @@
+<< properties >>
+string FIXED_BBOX 0 0 25172 27316
+string GDS_END 1364238
+string GDS_FILE /home/prajuval/Desktop/OpenLane/openlane/n_bit_alu/runs/run_11/results/signoff/n_bit_alu.magic.gds
+string GDS_START 81026
+<< end >>

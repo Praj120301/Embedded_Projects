@@ -1,0 +1,338 @@
+
+===========================================================================
+report_checks -unconstrained
+===========================================================================
+======================= Typical Corner ===================================
+
+Startpoint: b[0] (input port)
+Endpoint: zero (output port)
+Path Group: unconstrained
+Path Type: max
+
+Fanout     Cap    Slew   Delay    Time   Description
+-----------------------------------------------------------------------------
+                          1.00    1.00 ^ input external delay
+     2    0.01    0.00    0.00    1.00 ^ b[0] (in)
+                                         b[0] (net)
+                  0.00    0.00    1.00 ^ _1401_/A (sky130_fd_sc_hd__clkinv_1)
+     1    0.00    0.02    0.03    1.03 v _1401_/Y (sky130_fd_sc_hd__clkinv_1)
+                                         _0080_ (net)
+                  0.02    0.00    1.03 v _1410_/A1 (sky130_fd_sc_hd__mux2_1)
+     4    0.01    0.09    0.33    1.36 v _1410_/X (sky130_fd_sc_hd__mux2_1)
+                                         _0084_ (net)
+                  0.09    0.00    1.36 v _1406_/A (sky130_fd_sc_hd__xor2_1)
+     2    0.01    0.07    0.19    1.55 v _1406_/X (sky130_fd_sc_hd__xor2_1)
+                                         _0090_ (net)
+                  0.07    0.00    1.55 v _1407_/B (sky130_fd_sc_hd__and2_0)
+     1    0.00    0.03    0.15    1.69 v _1407_/X (sky130_fd_sc_hd__and2_0)
+                                         _0087_ (net)
+                  0.03    0.00    1.69 v _1404_/SLEEP (sky130_fd_sc_hd__lpflow_inputiso1p_1)
+     2    0.01    0.07    0.24    1.93 v _1404_/X (sky130_fd_sc_hd__lpflow_inputiso1p_1)
+                                         _0088_ (net)
+                  0.07    0.00    1.93 v _1575_/A (sky130_fd_sc_hd__and2_0)
+     1    0.00    0.03    0.13    2.07 v _1575_/X (sky130_fd_sc_hd__and2_0)
+                                         _0579_ (net)
+                  0.03    0.00    2.07 v _1572_/SLEEP (sky130_fd_sc_hd__lpflow_inputiso1p_1)
+     2    0.01    0.07    0.24    2.31 v _1572_/X (sky130_fd_sc_hd__lpflow_inputiso1p_1)
+                                         _0580_ (net)
+                  0.07    0.00    2.31 v _1729_/A (sky130_fd_sc_hd__and2_0)
+     1    0.00    0.03    0.13    2.44 v _1729_/X (sky130_fd_sc_hd__and2_0)
+                                         _1030_ (net)
+                  0.03    0.00    2.44 v _1726_/SLEEP (sky130_fd_sc_hd__lpflow_inputiso1p_1)
+     2    0.01    0.07    0.24    2.68 v _1726_/X (sky130_fd_sc_hd__lpflow_inputiso1p_1)
+                                         _1031_ (net)
+                  0.07    0.00    2.68 v _1757_/A (sky130_fd_sc_hd__and2_0)
+     1    0.00    0.03    0.13    2.81 v _1757_/X (sky130_fd_sc_hd__and2_0)
+                                         _1112_ (net)
+                  0.03    0.00    2.81 v _1754_/SLEEP (sky130_fd_sc_hd__lpflow_inputiso1p_1)
+     2    0.01    0.07    0.24    3.05 v _1754_/X (sky130_fd_sc_hd__lpflow_inputiso1p_1)
+                                         _1113_ (net)
+                  0.07    0.00    3.05 v _1771_/A (sky130_fd_sc_hd__and2_0)
+     1    0.00    0.03    0.13    3.18 v _1771_/X (sky130_fd_sc_hd__and2_0)
+                                         _1153_ (net)
+                  0.03    0.00    3.18 v _1768_/SLEEP (sky130_fd_sc_hd__lpflow_inputiso1p_1)
+     2    0.01    0.07    0.24    3.42 v _1768_/X (sky130_fd_sc_hd__lpflow_inputiso1p_1)
+                                         _1154_ (net)
+                  0.07    0.00    3.42 v _1785_/A (sky130_fd_sc_hd__and2_0)
+     1    0.00    0.03    0.13    3.55 v _1785_/X (sky130_fd_sc_hd__and2_0)
+                                         _1194_ (net)
+                  0.03    0.00    3.55 v _1782_/SLEEP (sky130_fd_sc_hd__lpflow_inputiso1p_1)
+     2    0.01    0.07    0.24    3.79 v _1782_/X (sky130_fd_sc_hd__lpflow_inputiso1p_1)
+                                         _1195_ (net)
+                  0.07    0.00    3.79 v _1799_/A (sky130_fd_sc_hd__and2_0)
+     1    0.00    0.03    0.13    3.92 v _1799_/X (sky130_fd_sc_hd__and2_0)
+                                         _1235_ (net)
+                  0.03    0.00    3.92 v _1796_/SLEEP (sky130_fd_sc_hd__lpflow_inputiso1p_1)
+     2    0.01    0.06    0.24    4.16 v _1796_/X (sky130_fd_sc_hd__lpflow_inputiso1p_1)
+                                         _1236_ (net)
+                  0.06    0.00    4.16 v _1813_/A (sky130_fd_sc_hd__and2_0)
+     1    0.00    0.03    0.13    4.29 v _1813_/X (sky130_fd_sc_hd__and2_0)
+                                         _1276_ (net)
+                  0.03    0.00    4.29 v _1810_/SLEEP (sky130_fd_sc_hd__lpflow_inputiso1p_1)
+     2    0.01    0.07    0.24    4.53 v _1810_/X (sky130_fd_sc_hd__lpflow_inputiso1p_1)
+                                         _1277_ (net)
+                  0.07    0.00    4.53 v _1827_/A (sky130_fd_sc_hd__and2_0)
+     1    0.00    0.03    0.13    4.66 v _1827_/X (sky130_fd_sc_hd__and2_0)
+                                         _1317_ (net)
+                  0.03    0.00    4.66 v _1824_/SLEEP (sky130_fd_sc_hd__lpflow_inputiso1p_1)
+     2    0.01    0.07    0.24    4.90 v _1824_/X (sky130_fd_sc_hd__lpflow_inputiso1p_1)
+                                         _1318_ (net)
+                  0.07    0.00    4.90 v _1841_/A (sky130_fd_sc_hd__and2_0)
+     1    0.00    0.03    0.13    5.03 v _1841_/X (sky130_fd_sc_hd__and2_0)
+                                         _1358_ (net)
+                  0.03    0.00    5.03 v _1838_/SLEEP (sky130_fd_sc_hd__lpflow_inputiso1p_1)
+     2    0.01    0.07    0.24    5.27 v _1838_/X (sky130_fd_sc_hd__lpflow_inputiso1p_1)
+                                         _0178_ (net)
+                  0.07    0.00    5.27 v _1435_/A (sky130_fd_sc_hd__and2_0)
+     1    0.00    0.03    0.13    5.40 v _1435_/X (sky130_fd_sc_hd__and2_0)
+                                         _0169_ (net)
+                  0.03    0.00    5.40 v _1432_/SLEEP (sky130_fd_sc_hd__lpflow_inputiso1p_1)
+     2    0.01    0.07    0.24    5.64 v _1432_/X (sky130_fd_sc_hd__lpflow_inputiso1p_1)
+                                         _0170_ (net)
+                  0.07    0.00    5.64 v _1449_/A (sky130_fd_sc_hd__and2_0)
+     1    0.00    0.03    0.13    5.77 v _1449_/X (sky130_fd_sc_hd__and2_0)
+                                         _0210_ (net)
+                  0.03    0.00    5.77 v _1446_/SLEEP (sky130_fd_sc_hd__lpflow_inputiso1p_1)
+     2    0.01    0.07    0.24    6.01 v _1446_/X (sky130_fd_sc_hd__lpflow_inputiso1p_1)
+                                         _0211_ (net)
+                  0.07    0.00    6.01 v _1463_/A (sky130_fd_sc_hd__and2_0)
+     1    0.00    0.03    0.13    6.14 v _1463_/X (sky130_fd_sc_hd__and2_0)
+                                         _0251_ (net)
+                  0.03    0.00    6.14 v _1460_/SLEEP (sky130_fd_sc_hd__lpflow_inputiso1p_1)
+     2    0.01    0.06    0.24    6.38 v _1460_/X (sky130_fd_sc_hd__lpflow_inputiso1p_1)
+                                         _0252_ (net)
+                  0.06    0.00    6.38 v _1477_/A (sky130_fd_sc_hd__and2_0)
+     1    0.00    0.03    0.13    6.51 v _1477_/X (sky130_fd_sc_hd__and2_0)
+                                         _0292_ (net)
+                  0.03    0.00    6.51 v _1474_/SLEEP (sky130_fd_sc_hd__lpflow_inputiso1p_1)
+     2    0.01    0.07    0.24    6.75 v _1474_/X (sky130_fd_sc_hd__lpflow_inputiso1p_1)
+                                         _0293_ (net)
+                  0.07    0.00    6.75 v _1491_/A (sky130_fd_sc_hd__and2_0)
+     1    0.00    0.03    0.13    6.88 v _1491_/X (sky130_fd_sc_hd__and2_0)
+                                         _0333_ (net)
+                  0.03    0.00    6.88 v _1488_/SLEEP (sky130_fd_sc_hd__lpflow_inputiso1p_1)
+     2    0.01    0.07    0.24    7.12 v _1488_/X (sky130_fd_sc_hd__lpflow_inputiso1p_1)
+                                         _0334_ (net)
+                  0.07    0.00    7.12 v _1505_/A (sky130_fd_sc_hd__and2_0)
+     1    0.00    0.03    0.13    7.25 v _1505_/X (sky130_fd_sc_hd__and2_0)
+                                         _0374_ (net)
+                  0.03    0.00    7.25 v _1502_/SLEEP (sky130_fd_sc_hd__lpflow_inputiso1p_1)
+     2    0.01    0.06    0.24    7.49 v _1502_/X (sky130_fd_sc_hd__lpflow_inputiso1p_1)
+                                         _0375_ (net)
+                  0.06    0.00    7.49 v _1519_/A (sky130_fd_sc_hd__and2_0)
+     1    0.00    0.03    0.13    7.61 v _1519_/X (sky130_fd_sc_hd__and2_0)
+                                         _0415_ (net)
+                  0.03    0.00    7.61 v _1516_/SLEEP (sky130_fd_sc_hd__lpflow_inputiso1p_1)
+     2    0.01    0.07    0.24    7.85 v _1516_/X (sky130_fd_sc_hd__lpflow_inputiso1p_1)
+                                         _0416_ (net)
+                  0.07    0.00    7.85 v _1533_/A (sky130_fd_sc_hd__and2_0)
+     1    0.00    0.03    0.13    7.98 v _1533_/X (sky130_fd_sc_hd__and2_0)
+                                         _0456_ (net)
+                  0.03    0.00    7.98 v _1530_/SLEEP (sky130_fd_sc_hd__lpflow_inputiso1p_1)
+     2    0.01    0.06    0.24    8.22 v _1530_/X (sky130_fd_sc_hd__lpflow_inputiso1p_1)
+                                         _0457_ (net)
+                  0.06    0.00    8.22 v _1547_/A (sky130_fd_sc_hd__and2_0)
+     1    0.00    0.03    0.13    8.35 v _1547_/X (sky130_fd_sc_hd__and2_0)
+                                         _0497_ (net)
+                  0.03    0.00    8.35 v _1544_/SLEEP (sky130_fd_sc_hd__lpflow_inputiso1p_1)
+     2    0.01    0.06    0.24    8.59 v _1544_/X (sky130_fd_sc_hd__lpflow_inputiso1p_1)
+                                         _0498_ (net)
+                  0.06    0.00    8.59 v _1561_/A (sky130_fd_sc_hd__and2_0)
+     1    0.00    0.03    0.13    8.72 v _1561_/X (sky130_fd_sc_hd__and2_0)
+                                         _0538_ (net)
+                  0.03    0.00    8.72 v _1558_/SLEEP (sky130_fd_sc_hd__lpflow_inputiso1p_1)
+     2    0.01    0.07    0.24    8.96 v _1558_/X (sky130_fd_sc_hd__lpflow_inputiso1p_1)
+                                         _0539_ (net)
+                  0.07    0.00    8.96 v _1589_/A (sky130_fd_sc_hd__and2_0)
+     1    0.00    0.03    0.13    9.09 v _1589_/X (sky130_fd_sc_hd__and2_0)
+                                         _0620_ (net)
+                  0.03    0.00    9.09 v _1586_/SLEEP (sky130_fd_sc_hd__lpflow_inputiso1p_1)
+     2    0.01    0.07    0.24    9.33 v _1586_/X (sky130_fd_sc_hd__lpflow_inputiso1p_1)
+                                         _0621_ (net)
+                  0.07    0.00    9.33 v _1603_/A (sky130_fd_sc_hd__and2_0)
+     1    0.00    0.03    0.13    9.46 v _1603_/X (sky130_fd_sc_hd__and2_0)
+                                         _0661_ (net)
+                  0.03    0.00    9.46 v _1600_/SLEEP (sky130_fd_sc_hd__lpflow_inputiso1p_1)
+     2    0.01    0.07    0.24    9.70 v _1600_/X (sky130_fd_sc_hd__lpflow_inputiso1p_1)
+                                         _0662_ (net)
+                  0.07    0.00    9.70 v _1617_/A (sky130_fd_sc_hd__and2_0)
+     1    0.00    0.03    0.13    9.84 v _1617_/X (sky130_fd_sc_hd__and2_0)
+                                         _0702_ (net)
+                  0.03    0.00    9.84 v _1614_/SLEEP (sky130_fd_sc_hd__lpflow_inputiso1p_1)
+     2    0.01    0.07    0.24   10.08 v _1614_/X (sky130_fd_sc_hd__lpflow_inputiso1p_1)
+                                         _0703_ (net)
+                  0.07    0.00   10.08 v _1631_/A (sky130_fd_sc_hd__and2_0)
+     1    0.00    0.03    0.13   10.21 v _1631_/X (sky130_fd_sc_hd__and2_0)
+                                         _0743_ (net)
+                  0.03    0.00   10.21 v _1628_/SLEEP (sky130_fd_sc_hd__lpflow_inputiso1p_1)
+     2    0.01    0.06    0.24   10.45 v _1628_/X (sky130_fd_sc_hd__lpflow_inputiso1p_1)
+                                         _0744_ (net)
+                  0.06    0.00   10.45 v _1645_/A (sky130_fd_sc_hd__and2_0)
+     1    0.00    0.03    0.13   10.57 v _1645_/X (sky130_fd_sc_hd__and2_0)
+                                         _0784_ (net)
+                  0.03    0.00   10.57 v _1642_/SLEEP (sky130_fd_sc_hd__lpflow_inputiso1p_1)
+     2    0.01    0.06    0.24   10.81 v _1642_/X (sky130_fd_sc_hd__lpflow_inputiso1p_1)
+                                         _0785_ (net)
+                  0.06    0.00   10.81 v _1659_/A (sky130_fd_sc_hd__and2_0)
+     1    0.00    0.03    0.13   10.94 v _1659_/X (sky130_fd_sc_hd__and2_0)
+                                         _0825_ (net)
+                  0.03    0.00   10.94 v _1656_/SLEEP (sky130_fd_sc_hd__lpflow_inputiso1p_1)
+     2    0.01    0.06    0.24   11.18 v _1656_/X (sky130_fd_sc_hd__lpflow_inputiso1p_1)
+                                         _0826_ (net)
+                  0.06    0.00   11.18 v _1673_/A (sky130_fd_sc_hd__and2_0)
+     1    0.00    0.03    0.13   11.31 v _1673_/X (sky130_fd_sc_hd__and2_0)
+                                         _0866_ (net)
+                  0.03    0.00   11.31 v _1670_/SLEEP (sky130_fd_sc_hd__lpflow_inputiso1p_1)
+     2    0.01    0.07    0.24   11.55 v _1670_/X (sky130_fd_sc_hd__lpflow_inputiso1p_1)
+                                         _0867_ (net)
+                  0.07    0.00   11.55 v _1687_/A (sky130_fd_sc_hd__and2_0)
+     1    0.00    0.03    0.13   11.68 v _1687_/X (sky130_fd_sc_hd__and2_0)
+                                         _0907_ (net)
+                  0.03    0.00   11.68 v _1684_/SLEEP (sky130_fd_sc_hd__lpflow_inputiso1p_1)
+     2    0.01    0.07    0.24   11.92 v _1684_/X (sky130_fd_sc_hd__lpflow_inputiso1p_1)
+                                         _0908_ (net)
+                  0.07    0.00   11.92 v _1701_/A (sky130_fd_sc_hd__and2_0)
+     1    0.00    0.03    0.13   12.05 v _1701_/X (sky130_fd_sc_hd__and2_0)
+                                         _0948_ (net)
+                  0.03    0.00   12.05 v _1698_/SLEEP (sky130_fd_sc_hd__lpflow_inputiso1p_1)
+     2    0.01    0.07    0.24   12.29 v _1698_/X (sky130_fd_sc_hd__lpflow_inputiso1p_1)
+                                         _0949_ (net)
+                  0.07    0.00   12.29 v _1715_/A (sky130_fd_sc_hd__and2_0)
+     1    0.00    0.03    0.13   12.42 v _1715_/X (sky130_fd_sc_hd__and2_0)
+                                         _0989_ (net)
+                  0.03    0.00   12.42 v _1712_/SLEEP (sky130_fd_sc_hd__lpflow_inputiso1p_1)
+     2    0.01    0.07    0.24   12.67 v _1712_/X (sky130_fd_sc_hd__lpflow_inputiso1p_1)
+                                         _0990_ (net)
+                  0.07    0.00   12.67 v _1743_/A (sky130_fd_sc_hd__and2_0)
+     1    0.00    0.03    0.13   12.80 v _1743_/X (sky130_fd_sc_hd__and2_0)
+                                         _1071_ (net)
+                  0.03    0.00   12.80 v _1740_/SLEEP (sky130_fd_sc_hd__lpflow_inputiso1p_1)
+     3    0.01    0.08    0.26   13.06 v _1740_/X (sky130_fd_sc_hd__lpflow_inputiso1p_1)
+                                         _0030_ (net)
+                  0.08    0.00   13.06 v _1422_/A (sky130_fd_sc_hd__xor2_1)
+     2    0.00    0.07    0.18   13.24 v _1422_/X (sky130_fd_sc_hd__xor2_1)
+                                         _0108_ (net)
+                  0.07    0.00   13.24 v _1411_/A1 (sky130_fd_sc_hd__mux2_1)
+     1    0.00    0.06    0.30   13.54 v _1411_/X (sky130_fd_sc_hd__mux2_1)
+                                         _0105_ (net)
+                  0.06    0.00   13.54 v _1412_/A1 (sky130_fd_sc_hd__mux2_1)
+     2    0.00    0.07    0.30   13.84 v _1412_/X (sky130_fd_sc_hd__mux2_1)
+                                         _0043_ (net)
+                  0.07    0.00   13.84 v _1395_/A (sky130_fd_sc_hd__nor4_1)
+     1    0.01    0.30    0.33   14.17 ^ _1395_/Y (sky130_fd_sc_hd__nor4_1)
+                                         _0039_ (net)
+                  0.30    0.00   14.17 ^ _1397_/C (sky130_fd_sc_hd__nand4_1)
+     1    0.00    0.10    0.12   14.30 v _1397_/Y (sky130_fd_sc_hd__nand4_1)
+                                         _0041_ (net)
+                  0.10    0.00   14.30 v _1398_/B (sky130_fd_sc_hd__nor2_1)
+     1    0.01    0.14    0.15   14.45 ^ _1398_/Y (sky130_fd_sc_hd__nor2_1)
+                                         zero (net)
+                  0.14    0.00   14.45 ^ zero (out)
+                                 14.45   data arrival time
+-----------------------------------------------------------------------------
+(Path is unconstrained)
+
+
+
+
+===========================================================================
+report_checks --slack_max -0.01
+============================================================================
+======================= Typical Corner ===================================
+
+No paths found.
+
+
+===========================================================================
+ report_check_types -max_slew -max_cap -max_fanout -violators
+============================================================================
+======================= Typical Corner ===================================
+
+
+max slew violations count Typical: 0
+max fanout violations count Typical: 0
+max cap violations count Typical: 0
+
+===========================================================================
+report_parasitic_annotation -report_unannotated
+============================================================================
+Found 32 unannotated drivers.
+ fake_clk
+ _1879_/HI
+ _1880_/HI
+ _1881_/HI
+ _1882_/HI
+ _1883_/HI
+ _1884_/HI
+ _1885_/HI
+ _1886_/HI
+ _1887_/HI
+ _1888_/HI
+ _1889_/HI
+ _1890_/HI
+ _1891_/HI
+ _1892_/HI
+ _1893_/HI
+ _1894_/HI
+ _1895_/HI
+ _1896_/HI
+ _1897_/HI
+ _1898_/HI
+ _1899_/HI
+ _1900_/HI
+ _1901_/HI
+ _1902_/HI
+ _1903_/HI
+ _1904_/HI
+ _1905_/HI
+ _1906_/HI
+ _1907_/HI
+ _1908_/HI
+ _1909_/HI
+Found 0 partially unannotated drivers.
+
+===========================================================================
+max slew violation count 0
+max fanout violation count 0
+max cap violation count 0
+============================================================================
+
+===========================================================================
+check_setup -verbose -unconstrained_endpoints -multiple_clock -no_clock -no_input_delay -loops -generated_clocks
+===========================================================================
+Warning: There are 35 unconstrained endpoints.
+  cout
+  overflow
+  result[0]
+  result[10]
+  result[11]
+  result[12]
+  result[13]
+  result[14]
+  result[15]
+  result[16]
+  result[17]
+  result[18]
+  result[19]
+  result[1]
+  result[20]
+  result[21]
+  result[22]
+  result[23]
+  result[24]
+  result[25]
+  result[26]
+  result[27]
+  result[28]
+  result[29]
+  result[2]
+  result[30]
+  result[31]
+  result[3]
+  result[4]
+  result[5]
+  result[6]
+  result[7]
+  result[8]
+  result[9]
+  zero
